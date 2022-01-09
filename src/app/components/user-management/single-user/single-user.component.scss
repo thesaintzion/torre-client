@@ -1,0 +1,24 @@
+:host ::ng-deep {
+    .mat-card{
+        width: 100%;
+        margin-bottom: .625rem;
+        border-radius: .9375rem;
+      }
+      
+      .mat-chip{
+      cursor: pointer;
+      }
+      
+      .mat-card-avatar{
+        background-color: var(--appPrimary);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .mat-card-content{
+        margin-left: 3.125rem;
+      }
+      
+}

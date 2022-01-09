@@ -1,0 +1,17 @@
+main{
+    background-color: var(--appDarkBg);
+    height: 100vh;
+    width: 100%;
+    color: var(--appWhite);
+    overflow: hidden;
+color: var(--appWhite);
+    .main-inner-con{
+        width: 31.25rem;
+        margin: 0 auto;
+    }
+
+    .users-card{
+        height: 90vh;
+        overflow: auto;
+    }
+}

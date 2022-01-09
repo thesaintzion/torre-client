@@ -1,0 +1,33 @@
+:host ::ng-deep {
+.content-con{
+  min-height: 25rem;
+  width: 31.25rem;
+}
+  
+    .mat-card{
+        width: 100%;
+        margin-bottom: .625rem;
+        border-radius: .9375rem;
+      }
+      
+      .mat-chip{
+      cursor: pointer;
+      }
+      
+      .mat-card-avatar{
+        background-color: var(--appPrimary);
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .mat-card-content{
+        margin-left: 3.125rem;
+      }
+
+      .mat-icon-button{
+        margin-left: -1.25rem;
+      }
+      
+}

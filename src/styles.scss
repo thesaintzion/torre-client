@@ -1,0 +1,94 @@
+:root {
+  --appSuccessLight: #edfbf8;
+  --appPrimary: #8bc34a;
+  --appGray: #f4f5f6;
+  --appDarkBg: #27292d;
+  --appWhite: #ffffff;
+}
+
+.rounded-10 {
+  border-radius: 10px !important;
+}
+
+.rounded-60 {
+  border-radius: 60px !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  &::before {
+    content: "";
+    background: var(--appDarkBg);
+    color: var(--appPrimary);
+    background-image: url("./assets/img/logo-dark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    font-size: 25px;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+
+
+button:focus {
+  outline: 1px dotted;
+  outline: none !important;
+  outline: 0 !important;
+  outline: 0px auto #f0f2f5 !important;
+}
+
+a.mat-raised-button,
+a.mat-button {
+  text-decoration: none !important;
+  &hover {
+    color: inherit;
+  }
+}
+
+a:hover {
+  color: var(--appPrimary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-thumb {
+    width: 12px;
+    background-clip: padding-box;
+    height: 10px !important;
+    background-color: transparent !important;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: gray !important;
+    border-radius: 50px;
+  }
+}
+
+
+.mat-card-avatar {
+  background-size: cover;
+}
+
+
+.mat-dialog-container {
+  padding-top: 0 !important;
+}
+
