@@ -12,10 +12,8 @@
 <div class="content-con">
   <p>Users with {{data?.skill}} skill</p>
   <div class="text-center mt-5" *ngIf="loading else showUsers">Loading...</div>
-  <div class="text-center mt-5" *ngIf="!loading && sameSkillUsers.length === 0">No user found.</div>
-
+  <div class="text-center mt-5" *ngIf="!loading && sameSkillUsers.length === 0">No user found.</div>=
   <ng-template #showUsers>
-
     <mat-card-header *ngFor="let user of sameSkillUsers" class="border shadow-sm rounded-10 mb-2  py-2 pl-2">
       <img mat-card-avatar *ngIf="user?.picture" [src]="user?.picture" onerror="this.src='assets/img/logo-dark.png'"
         [alt]="user?.name">
